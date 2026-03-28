@@ -1,1045 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- SEO Meta Tags -->
-  <title>Live Webcam Girls Online Now - Free Adult Cam Shows | HeatCams</title>
-  <meta name="description" content="HeatCams — watch free live adult webcam shows right now. Browse hundreds of cam models streaming live. Instant access, no signup required. 18+ adults only." />
-  <meta name="keywords" content="live webcam girls, free adult cam shows, live cam models online, adult webcam chat, free live nude cams, cam girls streaming now, live sex webcam" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="HeatCams" />
-  <link rel="canonical" href="https://yourdomain.github.io/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Live Webcam Girls Online Now — Free Adult Cam Shows" />
-  <meta property="og:description" content="Browse hundreds of live adult cam models right now. Free to watch, no account needed. 18+ only." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.github.io/" />
-  <meta property="og:image" content="https://yourdomain.github.io/og-image.jpg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Live Webcam Girls Online Now — HeatCams" />
-  <meta name="twitter:description" content="Browse hundreds of live adult cam models for free. 18+ only." />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "HeatCams - Free Live Adult Webcams",
-    "url": "https://yourdomain.github.io/",
-    "description": "Free live adult webcam directory. Browse models streaming online right now.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://yourdomain.github.io/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <style>
-    :root {
-      --bg:           #0c0a08;
-      --bg2:          #141008;
-      --bg-card:      #1a1508;
-      --bg-card-h:    #221c0a;
-      --accent:       #f59e0b;
-      --accent2:      #fbbf24;
-      --accent-dark:  #d97706;
-      --accent-glow:  rgba(245,158,11,0.25);
-      --orange:       #ea580c;
-      --orange-glow:  rgba(234,88,12,0.2);
-      --green:        #22c55e;
-      --text:         #fdf6e3;
-      --text-2:       #a89060;
-      --text-3:       #5a4a30;
-      --border:       #2a200a;
-      --border-a:     rgba(245,158,11,0.2);
-      --radius:       10px;
-      --t:            0.18s ease;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    /* ── Subtle noise texture ── */
-    body::after {
-      content: '';
-      pointer-events: none;
-      position: fixed;
-      inset: 0;
-      z-index: 999;
-      opacity: 0.025;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      background-size: 200px;
-    }
-
-    /* ══════════════════════════════════════════
-       AGE GATE
-    ══════════════════════════════════════════ */
-    #age-gate {
-      position: fixed; inset: 0; z-index: 9999;
-      background: radial-gradient(ellipse at 50% 60%, #1a1000, #050300);
-      display: flex; align-items: center; justify-content: center;
-      padding: 20px;
-    }
-    #age-gate.hidden { display: none; }
-
-    .gate-wrap {
-      max-width: 480px; width: 100%;
-      text-align: center;
-    }
-
-    .gate-flame {
-      font-size: 4rem;
-      display: block;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 20px rgba(245,158,11,0.5));
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes float { 0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)} }
-
-    .gate-logo {
-      font-size: 2.4rem;
-      font-weight: 900;
-      letter-spacing: -1px;
-      color: var(--accent2);
-      text-shadow: 0 0 30px var(--accent-glow);
-      margin-bottom: 4px;
-    }
-    .gate-logo span { color: var(--text); }
-
-    .gate-tagline {
-      font-size: 0.68rem;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: var(--text-3);
-      margin-bottom: 28px;
-    }
-
-    .gate-card {
-      background: rgba(245,158,11,0.05);
-      border: 1px solid var(--border-a);
-      border-radius: 14px;
-      padding: 32px;
-      backdrop-filter: blur(10px);
-    }
-
-    .gate-card h2 {
-      font-size: 1.15rem;
-      color: var(--accent2);
-      margin-bottom: 12px;
-    }
-
-    .gate-card p {
-      font-size: 0.83rem;
-      color: var(--text-2);
-      line-height: 1.8;
-      margin-bottom: 26px;
-    }
-    .gate-card p a { color: var(--accent); text-decoration: none; }
-    .gate-card p strong { color: var(--text); }
-
-    .gate-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-
-    .btn-hot {
-      background: linear-gradient(135deg, var(--orange), var(--accent));
-      color: #000;
-      border: none;
-      border-radius: 8px;
-      padding: 13px 36px;
-      font-size: 0.95rem;
-      font-weight: 800;
-      cursor: pointer;
-      letter-spacing: 0.02em;
-      transition: box-shadow var(--t), transform var(--t);
-    }
-    .btn-hot:hover {
-      box-shadow: 0 4px 24px var(--orange-glow), 0 0 40px var(--accent-glow);
-      transform: translateY(-2px);
-    }
-
-    .btn-cool {
-      background: transparent;
-      color: var(--text-2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 13px 24px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: border-color var(--t), color var(--t);
-    }
-    .btn-cool:hover { border-color: var(--text-2); color: var(--text); }
-
-    .gate-legal {
-      margin-top: 20px;
-      font-size: 0.72rem;
-      color: var(--text-3);
-      line-height: 1.75;
-    }
-
-    /* ══════════════════════════════════════════
-       HEADER
-    ══════════════════════════════════════════ */
-    header {
-      background: rgba(12,10,8,0.97);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-      position: sticky; top: 0; z-index: 100;
-    }
-
-    .header-strip {
-      background: linear-gradient(90deg, var(--orange), var(--accent), var(--orange));
-      background-size: 400% auto;
-      animation: shimmer 4s linear infinite;
-      text-align: center;
-      padding: 5px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #000;
-    }
-    @keyframes shimmer { 0%{background-position:0%}100%{background-position:400%} }
-
-    .header-inner {
-      max-width: 1400px; margin: 0 auto;
-      display: flex; align-items: center; gap: 16px;
-      padding: 0 24px; height: 58px;
-    }
-
-    .logo {
-      font-size: 1.4rem; font-weight: 900;
-      letter-spacing: -0.5px;
-      color: var(--accent2);
-      text-decoration: none;
-      text-shadow: 0 0 20px var(--accent-glow);
-      white-space: nowrap;
-    }
-    .logo span { color: var(--text); }
-
-    .header-fill { flex: 1; }
-
-    .online-badge {
-      display: flex; align-items: center; gap: 7px;
-      background: rgba(34,197,94,0.08);
-      border: 1px solid rgba(34,197,94,0.2);
-      border-radius: 20px;
-      padding: 5px 14px;
-      font-size: 0.8rem;
-      color: var(--green);
-      white-space: nowrap;
-    }
-    .green-dot {
-      width: 7px; height: 7px;
-      background: var(--green);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--green);
-      animation: blink 1.8s infinite;
-    }
-    @keyframes blink { 0%,100%{opacity:1}50%{opacity:0.3} }
-    #model-count { font-weight: 800; }
-
-    .refresh-badge {
-      background: rgba(245,158,11,0.08);
-      border: 1px solid var(--border-a);
-      border-radius: 20px;
-      padding: 5px 14px;
-      font-size: 0.78rem;
-      color: var(--accent);
-      white-space: nowrap;
-    }
-    #rtimer { font-weight: 700; }
-
-    /* ══════════════════════════════════════════
-       DISCLAIMER BANNER
-    ══════════════════════════════════════════ */
-    .disclaimer-bar {
-      background: rgba(245,158,11,0.07);
-      border-bottom: 1px solid rgba(245,158,11,0.15);
-      text-align: center;
-      padding: 7px 20px;
-      font-size: 0.76rem;
-      color: var(--text-3);
-    }
-    .disclaimer-bar strong { color: var(--accent); }
-    .disclaimer-bar a { color: var(--accent2); text-decoration: none; }
-
-    /* ══════════════════════════════════════════
-       MAIN
-    ══════════════════════════════════════════ */
-    main { max-width: 1400px; margin: 0 auto; padding: 28px 20px; }
-
-    /* Hero Banner */
-    .hero {
-      position: relative;
-      background: linear-gradient(135deg, var(--bg2) 0%, #1f1200 100%);
-      border: 1px solid var(--border-a);
-      border-radius: 14px;
-      padding: 28px 32px;
-      margin-bottom: 28px;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '🔥';
-      position: absolute;
-      right: 24px; top: 50%;
-      transform: translateY(-50%);
-      font-size: 5rem;
-      opacity: 0.12;
-      pointer-events: none;
-    }
-
-    .hero h1 { font-size: 1.6rem; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 8px; }
-    .hero h1 em { font-style: normal; color: var(--accent2); }
-    .hero p { font-size: 0.875rem; color: var(--text-2); max-width: 600px; }
-
-    .hero-pills { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
-    .pill {
-      background: rgba(245,158,11,0.1);
-      border: 1px solid var(--border-a);
-      color: var(--accent);
-      font-size: 0.76rem;
-      font-weight: 600;
-      padding: 5px 14px;
-      border-radius: 20px;
-    }
-
-    /* Filter bar */
-    .filter-bar {
-      display: flex; align-items: center; gap: 8px;
-      flex-wrap: wrap; margin-bottom: 22px;
-    }
-
-    .cat-label {
-      font-size: 0.72rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      color: var(--text-3);
-    }
-
-    .cat-btn {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      color: var(--text-2);
-      border-radius: 20px;
-      padding: 7px 16px;
-      font-size: 0.81rem;
-      font-family: inherit;
-      cursor: pointer;
-      transition: all var(--t);
-    }
-    .cat-btn:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-    .cat-btn.active {
-      background: linear-gradient(135deg, var(--orange), var(--accent));
-      border-color: transparent;
-      color: #000;
-      font-weight: 700;
-    }
-
-    .bar-fill { flex: 1; }
-
-    .sort-select {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      color: var(--text-2);
-      border-radius: 8px;
-      padding: 7px 12px;
-      font-size: 0.8rem;
-      font-family: inherit;
-      cursor: pointer;
-      outline: none;
-    }
-
-    /* Result count row */
-    .result-row {
-      display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 16px;
-      flex-wrap: wrap; gap: 8px;
-    }
-    .result-count { font-size: 0.82rem; color: var(--text-2); }
-    .result-count strong { color: var(--text); }
-
-    /* ══════════════════════════════════════════
-       GRID
-    ══════════════════════════════════════════ */
-    #grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
-      gap: 14px;
-      min-height: 280px;
-    }
-
-    /* ── Card ── */
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      cursor: pointer;
-      transition: transform var(--t), border-color var(--t), box-shadow var(--t);
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: var(--accent);
-      box-shadow: 0 8px 32px var(--accent-glow);
-    }
-
-    .card-img {
-      position: relative;
-      padding-top: 56.25%;
-      background: var(--bg2);
-      overflow: hidden;
-    }
-    .card-img img {
-      position: absolute; inset: 0;
-      width: 100%; height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-    .card:hover .card-img img { transform: scale(1.06); }
-
-    .card-img-ph {
-      position: absolute; inset: 0;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2.5rem; color: var(--text-3);
-      background: linear-gradient(135deg, #141008, #0c0a08);
-    }
-
-    /* Gradient scrim over thumb */
-    .card-img::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, transparent 55%, rgba(12,10,8,0.85) 100%);
-      z-index: 1;
-      pointer-events: none;
-    }
-
-    .badge-live {
-      position: absolute; top: 8px; left: 8px; z-index: 2;
-      background: linear-gradient(90deg, var(--orange), var(--accent));
-      color: #000;
-      font-size: 0.6rem; font-weight: 900;
-      padding: 2px 9px;
-      border-radius: 4px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .badge-viewers {
-      position: absolute; bottom: 9px; right: 8px; z-index: 2;
-      background: rgba(0,0,0,0.75);
-      backdrop-filter: blur(4px);
-      color: var(--text);
-      font-size: 0.7rem;
-      padding: 3px 9px;
-      border-radius: 5px;
-    }
-
-    .card-body { padding: 10px 12px 13px; }
-    .card-name {
-      font-size: 0.95rem; font-weight: 700;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-      margin-bottom: 5px;
-    }
-    .card-tags { display: flex; gap: 5px; flex-wrap: wrap; }
-    .tag {
-      background: rgba(245,158,11,0.08);
-      border: 1px solid rgba(245,158,11,0.15);
-      color: var(--accent);
-      font-size: 0.67rem;
-      padding: 2px 8px;
-      border-radius: 20px;
-    }
-    .tag-age {
-      background: rgba(234,88,12,0.08);
-      border-color: rgba(234,88,12,0.2);
-      color: var(--orange);
-    }
-
-    /* ── Loading ── */
-    .state-msg {
-      grid-column: 1/-1;
-      text-align: center;
-      padding: 80px 20px;
-      color: var(--text-2);
-    }
-    .spinner {
-      width: 40px; height: 40px;
-      border: 2px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      margin: 0 auto 16px;
-      box-shadow: 0 0 14px var(--accent-glow);
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .state-msg h3 { font-size: 1rem; margin-bottom: 6px; }
-    .state-msg p { font-size: 0.83rem; color: var(--text-3); }
-
-    /* ══════════════════════════════════════════
-       SEO CONTENT
-    ══════════════════════════════════════════ */
-    .seo {
-      margin-top: 64px;
-      padding-top: 40px;
-      border-top: 1px solid var(--border);
-    }
-    .seo h2 { font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; }
-    .seo h3 { font-size: 0.95rem; font-weight: 700; margin: 20px 0 7px; color: var(--text); }
-    .seo p { font-size: 0.855rem; color: var(--text-2); line-height: 1.8; max-width: 860px; margin-bottom: 10px; }
-
-    .seo-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-      gap: 12px; margin: 16px 0;
-    }
-    .seo-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-left: 2px solid var(--accent);
-      border-radius: 8px;
-      padding: 14px 16px;
-    }
-    .seo-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 5px; color: var(--accent2); }
-    .seo-card p { font-size: 0.78rem; color: var(--text-3); margin: 0; line-height: 1.5; }
-
-    /* ══════════════════════════════════════════
-       FOOTER
-    ══════════════════════════════════════════ */
-    footer {
-      background: var(--bg2);
-      border-top: 1px solid var(--border);
-      margin-top: 60px;
-      padding: 44px 24px;
-    }
-    .footer-inner { max-width: 1400px; margin: 0 auto; }
-
-    .footer-top {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 36px;
-      margin-bottom: 36px;
-    }
-    @media(max-width:700px) { .footer-top { grid-template-columns: 1fr; } }
-
-    .footer-col h4 {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-3);
-      font-weight: 700;
-      margin-bottom: 14px;
-    }
-    .footer-col p, .footer-col a {
-      font-size: 0.82rem;
-      color: var(--text-3);
-      text-decoration: none;
-      display: block;
-      margin-bottom: 7px;
-      line-height: 1.6;
-    }
-    .footer-col a:hover { color: var(--accent); }
-
-    .footer-legal {
-      border-top: 1px solid var(--border);
-      padding-top: 28px;
-      font-size: 0.77rem;
-      color: var(--text-3);
-      line-height: 1.85;
-    }
-    .footer-legal strong { color: var(--text-2); }
-    .footer-legal a { color: var(--accent); text-decoration: none; }
-    .footer-legal a:hover { color: var(--accent2); }
-
-    .rta-tag {
-      display: inline-block;
-      border: 1px solid var(--border);
-      padding: 2px 8px;
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      font-weight: 700;
-      border-radius: 3px;
-      margin-right: 8px;
-      color: var(--text-2);
-    }
-
-    .bonga-powered {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.78rem;
-      color: var(--text-3);
-      margin-top: 10px;
-    }
-    .bonga-powered a { color: var(--accent); text-decoration: none; }
-    .bonga-powered a:hover { color: var(--accent2); }
-
-    /* ══════════════════════════════════════════
-       RESPONSIVE
-    ══════════════════════════════════════════ */
-    @media(max-width:600px) {
-      .hero { padding: 20px; }
-      .hero h1 { font-size: 1.25rem; }
-      #grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; }
-      .refresh-badge { display: none; }
-      .header-strip span { display: none; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hot Live Cams - Watch Free Nude Girls Streaming | HotCamHub</title>
+<meta name="description" content="HotCamHub - Watch the hottest free live cam girls nude streaming right now. 10,000+ amateur models, HD quality, instant access. Free adult cams updated every minute.">
+<meta name="keywords" content="hot cams, live cam hub, free nude girls, streaming cams, hot webcam girls, adult live stream, cam hub, nude stream, live sexy girls, watch cams free">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Hot Live Cams - Watch Free Nude Girls Streaming">
+<meta property="og:description" content="Watch the hottest nude cam girls live streaming free right now. Updated every minute.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0c0c0c">
+<link rel="canonical" href="https://yourdomain.github.io/v4/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0c0c0c;--s:#141414;--t:#1c1c1c;--a:#ff6b35;--a2:#ff9f43;--text:#efefef;--m:#666;--b:#252525;--r:10px;--red:#e74c3c}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+header{background:var(--s);border-bottom:1px solid var(--b);padding:0 20px;position:sticky;top:0;z-index:99}
+.hi{max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.4rem;font-weight:900}
+.logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--a),var(--a2));border-radius:8px;display:grid;place-items:center;font-size:1.2rem}
+.logo b{color:var(--a)}
+.nav{display:flex}
+.nav a{display:flex;align-items:center;gap:5px;color:var(--m);font-size:.84rem;padding:8px 12px;border-radius:6px;transition:all .2s}
+.nav a:hover{background:var(--t);color:var(--text)}
+.nav a .dot{width:6px;height:6px;background:var(--red);border-radius:50%;animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.hbtn{background:linear-gradient(135deg,var(--a),var(--a2));color:#fff;padding:8px 20px;border-radius:50px;font-weight:800;font-size:.84rem;transition:opacity .2s}
+.hbtn:hover{opacity:.9}
+.hero{background:linear-gradient(160deg,#1a0d00,#0c0c0c 70%);padding:48px 20px;text-align:center;border-bottom:1px solid var(--b)}
+.hero h1{font-size:clamp(1.8rem,5vw,3.2rem);font-weight:900;line-height:1.1;margin-bottom:14px}
+.hero h1 .hot{background:linear-gradient(90deg,var(--a),var(--a2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--m);font-size:1rem;max-width:580px;margin:0 auto 22px}
+.stats-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:22px}
+.stat{background:var(--t);border:1px solid var(--b);border-radius:var(--r);padding:12px 20px;text-align:center;min-width:100px}
+.stat strong{display:block;font-size:1.5rem;font-weight:900;background:linear-gradient(90deg,var(--a),var(--a2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat span{font-size:.75rem;color:var(--m);display:block;margin-top:2px}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-hot{background:linear-gradient(135deg,var(--a),var(--a2));color:#fff;padding:12px 30px;border-radius:50px;font-weight:800;font-size:1rem;transition:opacity .2s;display:inline-block}
+.btn-hot:hover{opacity:.9}
+.btn-outline{border:2px solid var(--a);color:var(--a);padding:11px 28px;border-radius:50px;font-weight:700;font-size:1rem;transition:all .2s;display:inline-block}
+.btn-outline:hover{background:var(--a);color:#fff}
+.cats-bar{background:var(--s);border-bottom:1px solid var(--b);padding:12px 20px;overflow-x:auto}
+.cats-inner{max-width:1440px;margin:0 auto;display:flex;gap:8px;align-items:center}
+.cat{background:var(--t);border:1px solid var(--b);color:var(--m);padding:7px 16px;border-radius:50px;font-size:.83rem;cursor:pointer;transition:all .2s;white-space:nowrap}
+.cat:hover,.cat.on{background:var(--a);border-color:var(--a);color:#fff;font-weight:700}
+.main{max-width:1440px;margin:0 auto;padding:22px 20px}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.sec-title{font-size:1.1rem;font-weight:800;display:flex;align-items:center;gap:8px}
+.live-badge{background:var(--red);color:#fff;font-size:.68rem;font-weight:900;padding:3px 10px;border-radius:50px;animation:blink 1.2s infinite;letter-spacing:.5px}
+.sort-bar{display:flex;gap:6px}
+.sort-btn{background:var(--t);border:1px solid var(--b);color:var(--m);padding:5px 12px;border-radius:50px;font-size:.78rem;cursor:pointer;transition:all .2s}
+.sort-btn.on,.sort-btn:hover{background:var(--a);color:#fff;border-color:var(--a)}
+.countdown{font-size:.8rem;color:var(--m)}
+.countdown b{color:var(--a)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{display:block;background:var(--s);border-radius:var(--r);overflow:hidden;border:1px solid var(--b);transition:all .2s;position:relative}
+.card:hover{border-color:var(--a);transform:translateY(-4px);box-shadow:0 10px 30px rgba(255,107,53,.15)}
+.thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--t)}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.card:hover .thumb img{transform:scale(1.1)}
+.lv{position:absolute;top:8px;left:8px;background:var(--red);color:#fff;font-size:.66rem;font-weight:900;padding:2px 8px;border-radius:5px}
+.hd-tag{position:absolute;top:8px;right:8px;background:#1a6fb5;color:#fff;font-size:.63rem;font-weight:700;padding:2px 6px;border-radius:5px}
+.view-cnt{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,.85);color:#fff;font-size:.72rem;padding:2px 9px;border-radius:4px}
+.new-tag{position:absolute;bottom:8px;right:8px;background:var(--a);color:#fff;font-size:.62rem;font-weight:700;padding:2px 6px;border-radius:4px}
+.info{padding:10px 12px}
+.uname{font-weight:800;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sub{display:flex;align-items:center;gap:6px;margin:4px 0}
+.age-s{font-size:.73rem;color:var(--a);font-weight:700}
+.tags-row{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px}
+.tg{background:var(--t);color:var(--m);font-size:.66rem;padding:2px 7px;border-radius:3px}
+.promo-box{background:linear-gradient(135deg,#1a0d00,#0c0800);border:2px solid var(--a);border-radius:var(--r);padding:28px 20px;text-align:center;margin:28px 0}
+.promo-box h2{font-size:1.4rem;margin-bottom:8px}
+.promo-box h2 span{color:var(--a)}
+.promo-box p{color:var(--m);font-size:.92rem;margin-bottom:18px}
+.perks{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:18px;font-size:.85rem;color:var(--a2)}
+.seo-sec{background:var(--s);border:1px solid var(--b);border-radius:var(--r);padding:22px;margin-top:26px}
+.seo-sec h2{color:var(--a2);font-size:1rem;margin-bottom:8px}
+.seo-sec p{color:var(--m);font-size:.87rem;line-height:1.7;margin-bottom:8px}
+.kw-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.kw-links a{color:var(--a2);font-size:.8rem;text-decoration:underline}
+footer{background:var(--s);border-top:1px solid var(--b);padding:28px 20px;text-align:center;margin-top:36px}
+.flinks{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:12px}
+.flinks a{color:var(--m);font-size:.82rem}
+.flinks a:hover{color:var(--text)}
+.copy{color:var(--m);font-size:.77rem}
+.disc{font-size:.71rem;color:var(--m);margin-top:8px}
+.loading{text-align:center;padding:60px;color:var(--m)}
+.sp{width:40px;height:40px;border:3px solid var(--b);border-top-color:var(--a);border-radius:50%;animation:rot 1s linear infinite;margin:0 auto 14px}
+@keyframes rot{to{transform:rotate(360deg)}}
+@media(max-width:600px){.nav{display:none}.stats-row{gap:10px}.stat{padding:10px 14px}.grid{grid-template-columns:repeat(2,1fr);gap:8px}}
+</style>
 </head>
 <body>
+<header>
+  <div class="hi">
+    <a href="/" class="logo"><div class="logo-icon">🔥</div><div>Hot<b>Cam</b>Hub</div></div>
+    <nav class="nav">
+      <a href="#"><span class="dot"></span> Girls</a>
+      <a href="#"><span class="dot"></span> Couples</a>
+      <a href="#">Guys</a><a href="#">Trans</a><a href="#">New</a>
+    </nav>
+    <a href="https://chaturbate.com/in/?track=default&tour=grq&campaign=T2CSW&signup_notice=1" target="_blank" rel="noopener" class="hbtn">Watch Free</a>
+  </div>
+</header>
 
-  <!-- ══════════════════════════════════════════
-       AGE GATE — BongaCash TOS Compliant
-  ══════════════════════════════════════════ -->
-  <div id="age-gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
-    <div class="gate-wrap">
-      <span class="gate-flame">🔥</span>
-      <div class="gate-logo">Heat<span>Cams</span></div>
-      <div class="gate-tagline">Free Live Adult Webcams</div>
+<div class="hero">
+  <h1>Watch <span class="hot">Hot Live Cams</span><br>Nude Girls Streaming Free</h1>
+  <p>Browse over 10,000 live cam models streaming free right now. No registration. Instant HD access.</p>
+  <div class="stats-row">
+    <div class="stat"><strong id="liveNum">-</strong><span>Live Now</span></div>
+    <div class="stat"><strong>HD</strong><span>Quality</span></div>
+    <div class="stat"><strong>Free</strong><span>To Watch</span></div>
+    <div class="stat"><strong>24/7</strong><span>Always On</span></div>
+  </div>
+  <div class="hero-btns">
+    <a href="https://chaturbate.com/in/?track=default&tour=grq&campaign=T2CSW&signup_notice=1" target="_blank" rel="noopener" class="btn-hot">🔥 Watch Free Now</a>
+    <a href="https://chaturbate.com/in/?track=default&tour=grq&campaign=T2CSW&signup_notice=1" target="_blank" rel="noopener" class="btn-outline">Create Account</a>
+  </div>
+</div>
 
-      <div class="gate-card">
-        <h2 id="gate-title">Adults Only — You Must Be 18+</h2>
-        <p>
-          This website contains <strong>sexually explicit adult content</strong> including live nudity and sexual performances. Access is strictly limited to adults aged <strong>18 years or older</strong> (21 in some jurisdictions).
-          <br/><br/>
-          By clicking <strong>"Enter"</strong> you confirm that you are a legal adult in your local jurisdiction, that viewing adult content is legal in your location, and that you voluntarily choose to access this material.
-          <br/><br/>
-          <a href="https://www.rtalabel.org/" target="_blank" rel="noopener">RTA Labeled</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-          <a href="https://www.asacp.org/" target="_blank" rel="noopener">ASACP Member</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-          <a href="https://www.iwf.org.uk/" target="_blank" rel="noopener">IWF</a>
-        </p>
-        <div class="gate-btns">
-          <button class="btn-hot" onclick="enterSite()">🔥 Enter — I Am 18+</button>
-          <button class="btn-cool" onclick="leaveSite()">Leave</button>
-        </div>
-      </div>
+<div class="cats-bar">
+  <div class="cats-inner">
+    <div class="cat on" onclick="setG('',this)">All</div>
+    <div class="cat" onclick="setG('f',this)">Girls</div>
+    <div class="cat" onclick="setG('c',this)">Couples</div>
+    <div class="cat" onclick="setG('m',this)">Guys</div>
+    <div class="cat" onclick="setG('t',this)">Trans</div>
+  </div>
+</div>
 
-      <p class="gate-legal">
-        All performers on linked platforms are 18 years of age or older.<br/>
-        Age verification records per 18 U.S.C. 2257 are maintained by content producers.
-      </p>
+<div class="main">
+  <div class="sec-head">
+    <div class="sec-title"><span class="live-badge">LIVE</span> All Cams</div>
+    <div class="countdown">Refresh in <b id="ct">60</b>s</div>
+  </div>
+  <div id="grid"><div class="loading"><div class="sp"></div>Loading hot live cams...</div></div>
+
+  <div class="promo-box">
+    <h2>💋 Go Private on <span>Chaturbate</span> — Join Free</h2>
+    <p>Create your free account to unlock private shows, cam2cam, and exclusive performances.</p>
+    <div class="perks">
+      <span>✓ 100% Free</span><span>✓ HD Streams</span><span>✓ Private Shows</span><span>✓ Cam2Cam</span>
     </div>
+    <a href="https://chaturbate.com/in/?track=default&tour=grq&campaign=T2CSW&signup_notice=1" target="_blank" rel="noopener" class="btn-hot">Join Chaturbate Free →</a>
   </div>
 
-  <!-- ══════════════════════════════════════════
-       HEADER
-  ══════════════════════════════════════════ -->
-  <div class="header-strip" aria-hidden="true">
-    🔞 Adults Only — 18+ Content — All Performers Verified 18 or Older
+  <div class="seo-sec">
+    <h2>HotCamHub — Your #1 Source for Free Live Sex Cams</h2>
+    <p>HotCamHub is the ultimate free cam site aggregator featuring live Chaturbate models 24/7. Browse amateur and professional cam girls, couples, and trans models all streaming live sex shows, nude performances and sexy chat for free.</p>
+    <p>Find exactly who you want with our gender filter. All content is user-generated adult entertainment by verified 18+ performers. Streams refresh automatically every 60 seconds so you always see who's hottest right now.</p>
+    <div class="kw-links">
+      <a href="#">Free Sex Cams</a><a href="#">Nude Live Girls</a><a href="#">Amateur Webcam</a>
+      <a href="#">Teen Cams</a><a href="#">MILF Webcam</a><a href="#">Latina Girls</a>
+      <a href="#">Asian Cams</a><a href="#">BBW Cams</a><a href="#">Ebony Live</a>
+      <a href="#">Gay Cams</a><a href="#">Trans Live</a><a href="#">Fetish Cams</a>
+    </div>
   </div>
+</div>
 
-  <header>
-    <div class="header-inner">
-      <a href="/" class="logo">Heat<span>Cams</span></a>
-      <div class="header-fill"></div>
-      <div class="online-badge">
-        <span class="green-dot"></span>
-        <span id="model-count">0</span>&nbsp;Online Now
-      </div>
-      <div class="refresh-badge">↻&nbsp;<span id="rtimer">60s</span></div>
-    </div>
-  </header>
-
-  <!-- Disclaimer Bar -->
-  <div class="disclaimer-bar" role="note">
-    <strong>18+ ADULTS ONLY</strong> — Explicit sexual content. All models 18+. 18 U.S.C. 2257 records on file. &nbsp;
-    <a href="https://www.rtalabel.org/" target="_blank" rel="noopener">RTA Label</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="https://www.asacp.org/" target="_blank" rel="noopener">ASACP</a>
+<footer>
+  <div class="flinks">
+    <a href="#">Home</a><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">DMCA</a><a href="#">2257</a><a href="#">Contact</a>
   </div>
+  <p class="copy">&copy; 2025 HotCamHub. All rights reserved.</p>
+  <p class="disc">Adults only 18+. All performers verified 18 or older. 18 U.S.C. 2257 Record-Keeping Requirements.</p>
+</footer>
 
-  <!-- ══════════════════════════════════════════
-       MAIN CONTENT
-  ══════════════════════════════════════════ -->
-  <main>
+<script>
+const WM='T2CSW',LINK='https://chaturbate.com/in/?track=default&tour=grq&campaign='+WM+'&room=';
+let gender='',rooms=[],ct=60,iv;
 
-    <!-- Hero -->
-    <div class="hero">
-      <h1>Live Webcam Girls <em>Online Right Now</em></h1>
-      <p>Browse <span id="hero-count">hundreds of</span> verified performers streaming live this moment. Free to watch — no account required. Updated every 60 seconds.</p>
-      <div class="hero-pills">
-        <span class="pill">✅ Free to Browse</span>
-        <span class="pill">🔄 Auto-Refresh</span>
-        <span class="pill">🔞 18+ Verified</span>
-        <span class="pill">📡 HD Streams</span>
+function setG(g,el){gender=g;document.querySelectorAll('.cat').forEach(c=>c.classList.remove('on'));el.classList.add('on');render();}
+
+async function load(){
+  try{
+    const r=await fetch('https://chaturbate.com/api/public/affiliates/onlinerooms/?wm='+WM+'&client_ip=request_ip&limit=90'+(gender?'&gender='+gender:''));
+    const d=await r.json();rooms=d.results||[];
+    document.getElementById('liveNum').textContent=(d.count||rooms.length).toLocaleString();
+    render();
+  }catch(e){}
+}
+
+function render(){
+  const list=gender?rooms.filter(r=>r.gender===gender):rooms;
+  if(!list.length){document.getElementById('grid').innerHTML='<div style="text-align:center;padding:40px;color:var(--m)">No models online.</div>';return;}
+  document.getElementById('grid').innerHTML='<div class="grid">'+list.map(r=>{
+    const tags=(r.tags||[]).slice(0,3).map(t=>`<span class="tg">${t}</span>`).join('');
+    return`<a class="card" href="${LINK+encodeURIComponent(r.username)}" target="_blank" rel="noopener">
+      <div class="thumb"><img src="${r.image_url_360x270||r.image_url||''}" alt="${r.username} hot live cam" loading="lazy">
+        <span class="lv">LIVE</span>${r.hd?'<span class="hd-tag">HD</span>':''}
+        ${r.num_users?`<span class="view-cnt">👁 ${r.num_users.toLocaleString()}</span>`:''}
       </div>
-    </div>
-
-    <!-- Filter Bar -->
-    <div class="filter-bar" role="navigation" aria-label="Filter by category">
-      <span class="cat-label">Category:</span>
-      <button class="cat-btn active" onclick="setFilter(this,'all')">All Live</button>
-      <button class="cat-btn" onclick="setFilter(this,'girls')">Girls</button>
-      <button class="cat-btn" onclick="setFilter(this,'couples')">Couples</button>
-      <button class="cat-btn" onclick="setFilter(this,'trans')">Trans</button>
-      <button class="cat-btn" onclick="setFilter(this,'guys')">Guys</button>
-      <div class="bar-fill"></div>
-      <select class="sort-select" onchange="setSort(this.value)" aria-label="Sort models">
-        <option value="camscore">Sort: Most Popular</option>
-        <option value="viewers">Most Viewers</option>
-        <option value="new">Newest</option>
-        <option value="age">Youngest</option>
-      </select>
-    </div>
-
-    <div class="result-row">
-      <span class="result-count">Showing <strong id="showing">0</strong> live models</span>
-    </div>
-
-    <!-- Model Grid -->
-    <div id="grid" role="list" aria-label="Live cam models">
-      <div class="state-msg">
-        <div class="spinner"></div>
-        <h3>Loading live models&hellip;</h3>
-        <p>Connecting to the live feed.</p>
+      <div class="info"><div class="uname">${r.username}</div>
+        <div class="sub"><span class="age-s">${r.age?r.age+'yo':''}</span></div>
+        <div class="tags-row">${tags}</div>
       </div>
-    </div>
+    </a>`;
+  }).join('')+'</div>';
+}
 
-    <!-- SEO Content -->
-    <section class="seo" aria-label="About HeatCams">
-      <h2>Free Live Adult Webcams — Hundreds of Models Online Now</h2>
-      <p>
-        HeatCams is a real-time live adult webcam directory. We display performers who are currently live so you never waste a click on an offline room. The feed updates every 60 seconds — browse, pick a model, and start watching instantly with no account required.
-      </p>
-
-      <div class="seo-cards">
-        <div class="seo-card">
-          <h4>Live Right Now</h4>
-          <p>Only models currently streaming appear in the grid. The feed auto-refreshes every 60 seconds.</p>
-        </div>
-        <div class="seo-card">
-          <h4>100% Free to Browse</h4>
-          <p>No registration required to browse or preview shows. Optional tokens for tipping and private shows.</p>
-        </div>
-        <div class="seo-card">
-          <h4>All Categories</h4>
-          <p>Filter girls, couples, trans, guys — or browse all at once sorted by popularity.</p>
-        </div>
-        <div class="seo-card">
-          <h4>Age-Verified Performers</h4>
-          <p>All models are 18+ with verified age records maintained by the platform per 18 U.S.C. 2257.</p>
-        </div>
-      </div>
-
-      <h3>How HeatCams Works</h3>
-      <p>
-        HeatCams is an affiliate directory that links to live adult webcam performances hosted on a third-party platform. When you click a model card you are taken directly to their live show. HeatCams does not host any content or streams — we are a directory only.
-      </p>
-
-      <h3>Affiliate & Revenue Share Disclosure</h3>
-      <p>
-        HeatCams participates in an affiliate revenue sharing program. This means HeatCams may receive a commission when users register or purchase credits through our referral links. This is at <strong>no additional cost to you</strong>. Affiliate participation helps keep this directory free for everyone.
-      </p>
-
-      <h3>Popular Live Categories</h3>
-      <p>
-        Browse live cam girls, amateur couples streaming together, transgender performers, and male models. Use the category buttons above to filter the feed instantly. All performers have consented to appearing on the platform and have verified their age with the content provider.
-      </p>
-
-      <h3>Legal Notice</h3>
-      <p>
-        This website contains adult material and is restricted to persons 18 years of age or older. All performers linked from HeatCams are 18 years of age or older. Age verification records as required by 18 U.S.C. 2257 are maintained by the respective content producers. HeatCams is a content aggregator and directory — it is not the producer, primary producer, secondary producer, or copy distributor of any content shown on linked platforms.
-      </p>
-    </section>
-
-  </main>
-
-  <!-- ══════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════ -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-col">
-          <h4>HeatCams</h4>
-          <p>A free real-time live adult webcam directory. All models verified 18+. Updated every 60 seconds. For adults only.</p>
-          <p style="margin-top:10px;font-size:0.78rem;color:var(--text-3)">
-            HeatCams participates in an affiliate program. Links to performer pages may earn a commission at no cost to you.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4>Browse</h4>
-          <a href="/">All Live Cams</a>
-          <a href="/?filter=girls">Cam Girls</a>
-          <a href="/?filter=couples">Couples</a>
-          <a href="/?filter=trans">Trans</a>
-          <a href="/?filter=guys">Guys</a>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">DMCA / Content Removal</a>
-          <a href="#">2257 Statement</a>
-          <a href="https://www.rtalabel.org/" target="_blank" rel="noopener">RTA Label</a>
-          <a href="https://www.asacp.org/" target="_blank" rel="noopener">ASACP Member</a>
-        </div>
-      </div>
-
-      <div class="footer-legal">
-        <p>
-          <span class="rta-tag">RTA</span>
-          <strong>18+ ADULTS ONLY.</strong> This website contains sexually explicit material including live nudity and adult content. Access is prohibited to persons under 18 years of age (or 21 where applicable). By using this site you confirm you are a legal adult.
-        </p>
-        <p style="margin-top:10px;">
-          All models and performers on linked platforms are 18 years of age or older. Records required by <strong>18 U.S.C. 2257</strong> are maintained by the respective content producers and are available upon lawful request. HeatCams is not the producer, primary producer, secondary producer, or copy distributor of any content. HeatCams is a directory/aggregator only.
-        </p>
-        <p style="margin-top:10px;">
-          <strong>Affiliate Disclosure:</strong> HeatCams participates in affiliate revenue sharing programs. Links on this site to third-party platforms may be affiliate links. HeatCams may earn a commission when users register or purchase through these links. This does not affect the price you pay.
-        </p>
-        <p style="margin-top:10px;">
-          Parental controls: <a href="https://www.rtalabel.org/" target="_blank" rel="noopener">RTA Label</a> &nbsp;|&nbsp; <a href="https://www.asacp.org/" target="_blank" rel="noopener">ASACP</a> &nbsp;|&nbsp; <a href="https://www.iwf.org.uk/" target="_blank" rel="noopener">IWF</a>
-        </p>
-        <div class="bonga-powered">
-          &copy; <span id="yr"></span> HeatCams &mdash; Powered by <a href="https://bongacams.com/" target="_blank" rel="noopener sponsored">BongaCams</a> via <a href="https://bongacash.com/" target="_blank" rel="noopener">BongaCash</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // ── BongaCash Configuration ──
-    const PROMO_ID   = '18145';
-    const API_BASE   = 'https://bngprm.com/api/v2/';
-    const BONGA_BASE = 'https://bongacams.com/';
-
-    // BongaCash API endpoints
-    // Primary: camscore feed (ranked by popularity score)
-    // Fallback: online feed
-    const FEED_URL = `${API_BASE}online?promo_id=${PROMO_ID}&format=json`;
-
-    // Affiliate link builder
-    function affLink(username) {
-      if (username) {
-        return `${BONGA_BASE}${encodeURIComponent(username)}?promo_id=${PROMO_ID}`;
-      }
-      return `${BONGA_BASE}?promo_id=${PROMO_ID}`;
-    }
-
-    const REFRESH_SEC = 60;
-
-    // ── State ──
-    let allModels = [];
-    let currentFilter = 'all';
-    let currentSort = 'camscore';
-    let countdown = REFRESH_SEC;
-    let cdTimer;
-
-    // ── Year ──
-    document.getElementById('yr').textContent = new Date().getFullYear();
-
-    // ── Age Gate ──
-    function enterSite() {
-      try { sessionStorage.setItem('hc_age', '1'); } catch(e) {}
-      document.getElementById('age-gate').classList.add('hidden');
-    }
-
-    function leaveSite() {
-      window.location.href = 'https://www.google.com/';
-    }
-
-    (function checkAge() {
-      try {
-        if (sessionStorage.getItem('hc_age') === '1') {
-          document.getElementById('age-gate').classList.add('hidden');
-        }
-      } catch(e) {}
-    })();
-
-    // ── Category detection ──
-    // BongaCash API provides gender/tags fields
-    function getCategory(m) {
-      const gender = (m.gender || m.sex || '').toLowerCase();
-      const tags   = ((m.tags || m.categories || []).join(' ')).toLowerCase();
-      const type   = (m.type || m.chat_type || '').toLowerCase();
-
-      if (type.includes('couple') || tags.includes('couple') || tags.includes('pair')) return 'couples';
-      if (gender === 'c' || tags.includes('trans') || tags.includes('shemale') || tags.includes('ladyboy') || gender === 'ts') return 'trans';
-      if (gender === 'm' || type === 'male') return 'guys';
-      return 'girls'; // default: female (most common on BongaCams)
-    }
-
-    // ── Filter ──
-    function setFilter(el, f) {
-      currentFilter = f;
-      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-      el.classList.add('active');
-      renderGrid();
-    }
-
-    // ── Sort ──
-    function setSort(v) {
-      currentSort = v;
-      renderGrid();
-    }
-
-    // ── Fetch BongaCash Feed ──
-    async function fetchFeed() {
-      try {
-        const res = await fetch(FEED_URL, { cache: 'no-store' });
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const data = await res.json();
-
-        // BongaCash API response shapes:
-        // { "models": [...] }  OR  { "data": [...] }  OR  direct array
-        let models = [];
-        if (Array.isArray(data)) {
-          models = data;
-        } else if (Array.isArray(data.models)) {
-          models = data.models;
-        } else if (Array.isArray(data.data)) {
-          models = data.data;
-        } else if (Array.isArray(data.results)) {
-          models = data.results;
-        } else {
-          // Try to find the first array property
-          const found = Object.values(data || {}).find(v => Array.isArray(v));
-          if (found) models = found;
-        }
-
-        allModels = models;
-        const n = models.length;
-        document.getElementById('model-count').textContent = n.toLocaleString();
-        document.getElementById('hero-count').textContent = n.toLocaleString();
-        renderGrid();
-      } catch (err) {
-        console.warn('[HeatCams] Feed error:', err);
-        showError();
-      }
-    }
-
-    // ── Render Grid ──
-    function renderGrid() {
-      const grid = document.getElementById('grid');
-      let models = [...allModels];
-
-      // Filter by category
-      if (currentFilter !== 'all') {
-        models = models.filter(m => getCategory(m) === currentFilter);
-      }
-
-      // Sort
-      if (currentSort === 'camscore') {
-        models.sort((a, b) => (parseFloat(b.camscore || b.score || b.rating || 0)) - (parseFloat(a.camscore || a.score || a.rating || 0)));
-      } else if (currentSort === 'viewers') {
-        models.sort((a, b) => (b.viewers || b.users || b.online_count || 0) - (a.viewers || a.users || a.online_count || 0));
-      } else if (currentSort === 'new') {
-        models.sort((a, b) => (b.id || 0) - (a.id || 0));
-      } else if (currentSort === 'age') {
-        models.sort((a, b) => (a.age || 99) - (b.age || 99));
-      }
-
-      document.getElementById('showing').textContent = models.length.toLocaleString();
-
-      if (!models.length && !allModels.length) return; // still loading
-
-      if (!models.length) {
-        grid.innerHTML = `<div class="state-msg"><h3>No Models Found</h3><p>Try a different category filter.</p></div>`;
-        return;
-      }
-
-      grid.innerHTML = models.map(m => buildCard(m)).join('');
-    }
-
-    // ── Build Card ──
-    function buildCard(m) {
-      // BongaCash field names (may vary — handle multiple possible keys)
-      const username = m.username || m.user_name || m.handle || m.login || '';
-      const name     = esc(m.display_name || m.displayname || username || 'Model');
-      const viewers  = m.viewers || m.users || m.online_count || m.viewer_count || 0;
-      const age      = m.age ? esc(String(m.age)) : '';
-      const camscore = m.camscore || m.score || '';
-
-      // Thumbnail — BongaCams uses snapshot_url or thumb_url
-      const thumb = m.snapshot || m.snapshot_url || m.thumbnail || m.thumb || m.preview_image || m.img || '';
-
-      const href = affLink(username);
-
-      // Tags — BongaCams returns tags array or categories
-      const rawTags = m.tags || m.categories || [];
-      const tagHtml = rawTags.slice(0, 2).map(t => `<span class="tag">${esc(String(t))}</span>`).join('');
-
-      const imgHtml = thumb
-        ? `<img src="${esc(thumb)}" alt="${name} live cam show" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
-        : '';
-      const phStyle = thumb ? 'style="display:none"' : '';
-
-      return `
-        <a class="card" href="${href}" target="_blank" rel="noopener sponsored" role="listitem" aria-label="${name} — Live Now">
-          <div class="card-img">
-            ${imgHtml}
-            <div class="card-img-ph" ${phStyle}>📹</div>
-            <span class="badge-live">LIVE</span>
-            ${viewers ? `<span class="badge-viewers">👁 ${fmt(viewers)}</span>` : ''}
-          </div>
-          <div class="card-body">
-            <div class="card-name">${name}</div>
-            <div class="card-tags">
-              ${tagHtml}
-              ${age ? `<span class="tag tag-age">${age}yo</span>` : ''}
-            </div>
-          </div>
-        </a>`;
-    }
-
-    // ── Error State ──
-    function showError() {
-      document.getElementById('grid').innerHTML = `
-        <div class="state-msg">
-          <h3>Feed Unavailable</h3>
-          <p>Could not load live models. Check your connection or
-          <a href="${BONGA_BASE}?promo_id=${PROMO_ID}" target="_blank" rel="noopener sponsored" style="color:var(--accent)">browse directly on BongaCams</a>.</p>
-        </div>`;
-    }
-
-    // ── Utilities ──
-    function esc(s) {
-      return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
-
-    function fmt(n) {
-      return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
-    }
-
-    // ── Countdown / Auto-Refresh ──
-    function startCountdown() {
-      countdown = REFRESH_SEC;
-      document.getElementById('rtimer').textContent = countdown + 's';
-      clearInterval(cdTimer);
-      cdTimer = setInterval(() => {
-        countdown--;
-        document.getElementById('rtimer').textContent = countdown + 's';
-        if (countdown <= 0) {
-          countdown = REFRESH_SEC;
-          fetchFeed();
-        }
-      }, 1000);
-    }
-
-    // ── Init ──
-    fetchFeed();
-    startCountdown();
-  </script>
+function tick(){clearInterval(iv);ct=60;iv=setInterval(()=>{ct--;document.getElementById('ct').textContent=ct;if(ct<=0){load();ct=60;}},1000);}
+load();tick();
+</script>
 </body>
 </html>
