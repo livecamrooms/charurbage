@@ -765,7 +765,10 @@
     // ── Constants ──
     const AFFILIATE_ID = 'bewse2';
     const CAMPAIGN = 'CMP_HERE'; // Replace with your CamSoda campaign ID
-    const API_URL = `https://feed.camsoda.com/api/v1/browse/online_embed?id=${AFFILIATE_ID}`;
+    const API_URLS = [
+  `https://feed.camsoda.com/api/v1/browse/online_embed?id=${AFFILIATE_ID}`,
+  `https://feed.camsoda.com/api/v1/browse/all_embed?id=${AFFILIATE_ID}`
+];
     const CAMSODA_BASE = 'https://www.camsoda.com/';
     const REFRESH_INTERVAL = 60; // seconds
 
